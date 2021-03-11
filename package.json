@@ -7,6 +7,10 @@
     "start": "node index.js",
     "server": "nodemon index.js"
   },
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.11"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dgamboa/lambda-cards.git"
