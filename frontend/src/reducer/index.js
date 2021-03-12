@@ -1,4 +1,4 @@
-import { GET_QUESTIONS, NEXT_QUESTION } from "../actions";
+import { GET_QUESTIONS, NEXT_QUESTION, RESTART_SESSION } from "../actions";
 
 const initialState = {
   questionsList: [
@@ -26,6 +26,11 @@ function reducer(state = initialState, action) {
       return {
         ...state,
         questionCounter: state.questionCounter + 1
+      };
+    case RESTART_SESSION:
+      return {
+        ...state,
+        questionCounter: 1
       };
     default:
       return state;
