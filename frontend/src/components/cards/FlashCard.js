@@ -9,6 +9,7 @@ function FlashCard(props) {
 
   const handleNextQuestion = e => {
     e.preventDefault();
+    flipCard(e);
     props.nextQuestion();
   };
 
