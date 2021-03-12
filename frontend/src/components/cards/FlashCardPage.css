@@ -1,0 +1,13 @@
+.card-container {
+  border: 1px solid black;
+}
+
+.question-counter-container {
+  border: 1px dashed blue;
+  margin: 10px;
+}
+
+.flashcard-container {
+  border: 2px solid orange;
+  margin: 10px;
+}

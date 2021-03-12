@@ -1,7 +1,16 @@
 import { GET_QUESTIONS, NEXT_QUESTION } from "../actions";
 
 const initialState = {
-  questionsList: [],
+  questionsList: [
+    {
+      question: "What is React?",
+      answer: "A front end, JavaScript library for building user interfaces or UI components"
+    },
+    {
+      question: "What is Node.js?",
+      answer: "Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser"
+    }
+  ],
   displayQuestion: {
     question: "What is React?",
     answer: "A front end, JavaScript library for building user interfaces or UI components"
