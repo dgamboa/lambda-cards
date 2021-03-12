@@ -5,19 +5,9 @@ import App from './App';
 import { createStore } from 'redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import rootReducer from "./reducer";
 
-function reducer() {
-  return ({
-    questionsList: [],
-    displayQuestion: {
-      question: "What is React?",
-      answer: "A front end, JavaScript library for building user interfaces or UI components"
-    },
-    questionCounter: 1
-  })
-};
-
-const store = createStore(reducer);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
