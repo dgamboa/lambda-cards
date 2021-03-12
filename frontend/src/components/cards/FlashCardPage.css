@@ -11,3 +11,40 @@
   border: 2px solid orange;
   margin: 10px;
 }
+
+.ring-fence {
+  width: 400px;
+  height: 260px;
+  perspective: 600px;
+  border: 1px solid black;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.85s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card.flipped {
+  transform: rotateX(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.front {
+  background: red;
+}
+
+.back {
+  background: blue;
+  transform: rotateX(180deg);
+}
+
