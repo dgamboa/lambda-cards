@@ -1,8 +1,21 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { useHistory } from 'react-router';
+import { nextQuestion } from '../../actions';
 
 function FlashCard(props) {
-  const { displayQuestion } = props;
+  const { totalQuestions, displayQuestion, questionCounter } = props;
+  const history = useHistory();
+
+  const handleNextQuestion = e => {
+    e.preventDefault();
+    props.nextQuestion();
+  };
+
+  const handleFinish = e => {
+    e.preventDefault();
+    history.push("/conclusion");
+  };
 
   const flipCard = e => {
     e.target
@@ -25,15 +38,24 @@ function FlashCard(props) {
           </div>
         </div>
       </div>
-      <button className="next-question">Next Question</button>
+      {
+        questionCounter < totalQuestions &&
+        <button className="next-question" onClick={handleNextQuestion}>Next Question</button>
+      }
+      {
+        questionCounter === totalQuestions &&
+        <button className="next-question" onClick={handleFinish}>Finish</button>
+      }
     </section>
   )
 }
 
 const mapStateToProps = state => {
   return {
-    displayQuestion: state.displayQuestion
+    totalQuestions: state.questionsList.length,
+    displayQuestion: state.displayQuestion,
+    questionCounter: state.questionCounter
   };
 };
 
-export default connect(mapStateToProps, {})(FlashCard);
+export default connect(mapStateToProps, { nextQuestion })(FlashCard);

@@ -23,8 +23,10 @@ function reducer(state = initialState, action) {
     case GET_QUESTIONS:
       return state;
     case NEXT_QUESTION:
-      console.log("hello from reducer")
-      return state;
+      return {
+        ...state,
+        questionCounter: state.questionCounter + 1
+      };
     default:
       return state;
   }
