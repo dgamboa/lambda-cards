@@ -1,12 +1,13 @@
 import React from "react";
+import { Route } from "react-router";
 import FlashCard from "./components/FlashCard";
 import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
-      <FlashCard />
+      <Route exact path={"/"} component={HomePage}/>
+      <Route exact path={"/cards"} component={FlashCard}/>
     </div>
   );
 }
