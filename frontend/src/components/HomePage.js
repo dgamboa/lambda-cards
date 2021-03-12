@@ -1,10 +1,12 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 
 export default function HomePage() {
+  const history = useHistory();
 
-  const handleClick = e => {
+  const handleStart = e => {
     e.preventDefault();
-    console.log("Start Button")
+    history.push("/cards");
   };
 
   return (
@@ -15,7 +17,7 @@ export default function HomePage() {
         "_blank" rel="noreferrer">Active Recall</a> and <a href="https://en.wikipedia.org/wiki/Spaced_repetition" target=
         "_blank" rel="noreferrer">Spaced Repetition</a>
       </h2>
-      <button className="start-button" onClick={handleClick}>Click here to start</button>
+      <button className="start-button" onClick={handleStart}>Click here to start</button>
     </div>
   )
 }
