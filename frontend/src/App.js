@@ -1,10 +1,11 @@
 import React from "react";
 import FlashCard from "./components/FlashCard";
+import HomePage from "./components/HomePage";
 
 function App() {
   return (
     <div className="App">
-      Hello from React
+      <HomePage />
       <FlashCard />
     </div>
   );
