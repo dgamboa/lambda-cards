@@ -21,11 +21,16 @@ const initialState = {
 function reducer(state = initialState, action) {
   switch(action.type) {
     case GET_QUESTIONS:
-      return state;
+      return {
+        ...state,
+        questionCounter: 1,
+        displayQuestion: state.questionsList[0]
+      };
     case NEXT_QUESTION:
       return {
         ...state,
-        questionCounter: state.questionCounter + 1
+        questionCounter: state.questionCounter + 1,
+        displayQuestion: state.questionsList[state.questionCounter]
       };
     case RESTART_SESSION:
       return {
