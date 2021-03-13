@@ -15,7 +15,7 @@ function ConclusionPage(props) {
 
   return (
     <div className="home-container">
-      <h1>Good work!</h1>
+      <h1>Good work! 👏</h1>
       <p>
         You may want to take a break before doing another round
       </p>

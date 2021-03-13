@@ -11,7 +11,7 @@ export default function HomePage() {
 
   return (
     <div className="home-container">
-      <h1>Welcome to Lambda Cards</h1>
+      <h1>Welcome to Lambda Cards 👋</h1>
       <h2>
         An Easy Way to Prepare for the Lambda Core Interview Using <a href="https://en.wikipedia.org/wiki/Active_recall" target=
         "_blank" rel="noreferrer">Active Recall</a> and <a href="https://en.wikipedia.org/wiki/Spaced_repetition" target=
