@@ -30,6 +30,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "knex": "^0.95.2",
+    "sqlite3": "^5.0.2"
   }
 }
