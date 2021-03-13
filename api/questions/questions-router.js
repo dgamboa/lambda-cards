@@ -1,5 +1,6 @@
 const express = require('express');
 const Question = require('./questions-model');
+const { validateQuestionId } = require('../middleware/middleware');
 
 const router = express.Router();
 
@@ -9,6 +10,10 @@ router.get('/', async (req, res, next) => {
     const questions = await Question.get();
     res.json(questions);
   } catch(err) { next(err) }
+});
+
+router.get('/:id', validateQuestionId, async (req, res, next) => {
+  res.json(req.question);
 });
 
 router.use((err, req, res, next) => { // eslint-disable-line
