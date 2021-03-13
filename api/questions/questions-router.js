@@ -16,6 +16,10 @@ router.get('/:id', validateQuestionId, async (req, res, next) => {
   res.json(req.question);
 });
 
+router.use('*', (req, res) => {
+  res.status(404).json({ message: "Invalid endpoint. Please check your request." })
+});
+
 router.use((err, req, res, next) => { // eslint-disable-line
   res.status(500).json({
     message: err.message,
