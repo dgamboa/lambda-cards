@@ -44,7 +44,7 @@
 }
 
 .back {
-  background: blue;
+  background: #ccc;
   transform: rotateX(180deg);
 }
 
