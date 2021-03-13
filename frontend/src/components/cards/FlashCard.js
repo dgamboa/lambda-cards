@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { useHistory } from 'react-router';
 import { nextQuestion } from '../../actions';
 
 function FlashCard(props) {
   const { totalQuestions, displayQuestion, questionCounter } = props;
+  const [flipped, setFlipped] = useState(false);
   const history = useHistory();
 
   const handleNextQuestion = e => {
     e.preventDefault();
-    flipCard(e);
+    if (flipped) {
+      e.target
+      .previousElementSibling
+      .firstChild
+      .classList.toggle('flipped');
+      setFlipped(false);
+    };
     props.nextQuestion();
   };
 
@@ -23,6 +30,7 @@ function FlashCard(props) {
      .parentNode
      .parentNode
      .classList.toggle('flipped');
+    setFlipped(true);
   };
 
   return (
@@ -45,7 +53,7 @@ function FlashCard(props) {
       }
       {
         questionCounter === totalQuestions &&
-        <button className="next-question" onClick={handleFinish}>Finish</button>
+        <button className="finish" onClick={handleFinish}>Finish</button>
       }
     </section>
   )
