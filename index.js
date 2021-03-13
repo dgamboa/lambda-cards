@@ -5,7 +5,6 @@ const express = require('express');
 
 // Express Server Instance and Middleware
 const server = require('./api/server');
-
 server.use(express.static(path.join(__dirname, 'frontend/build')));
 
 if (process.env.NODE_ENV === 'development') {
