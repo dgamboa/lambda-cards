@@ -4,18 +4,14 @@ const path = require('path');
 const express = require('express');
 
 // Express Server Instance and Middleware
-const server = express();
+const server = require('./api/server');
 
-server.use(express.json())
 server.use(express.static(path.join(__dirname, 'frontend/build')));
 
 if (process.env.NODE_ENV === 'development') {
   const cors = require('cors');
   server.use(cors());
 };
-
-// API Endpoints
-// ...to be written...
 
 // Display React App for non-API Endpoints
 server.use('*', (req, res) => {
