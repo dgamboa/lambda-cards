@@ -10,6 +10,9 @@ module.exports = {
     },
     migrations: {
       directory: './data/migrations'
+    },
+    seeds: {
+      directory: './data/seeds'
     }
   },
 
@@ -25,6 +28,9 @@ module.exports = {
     },
     migrations: {
       directory: './data/migrations'
+    },
+    seeds: {
+      directory: './data/seeds'
     }
   }
 

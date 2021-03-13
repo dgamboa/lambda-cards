@@ -1,12 +1,13 @@
 const express = require('express');
-const Questions = require('./questions-model');
+const Question = require('./questions-model');
 
 const router = express.Router();
 
 // Endpoints
 router.get('/', async (req, res, next) => {
   try {
-    res.json({ msg: "get all questions" });
+    const questions = await Question.get();
+    res.json(questions);
   } catch(err) { next(err) }
 });
 
