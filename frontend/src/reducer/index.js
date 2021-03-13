@@ -15,11 +15,26 @@ const initialState = {
 function reducer(state = initialState, action) {
   switch(action.type) {
     case FETCH_QUESTIONS_LOADING:
-      return state;
+      return {
+        ...state,
+        questionsList: [],
+        displayQuestion: {},
+        isFetching: true,
+        error: ""
+      };
     case FETCH_QUESTIONS_SUCCESS:
-      return state;
+      return {
+        ...state,
+        questionsList: action.payload,
+        displayQuestion: action.payload[0],
+        isFetching: false,
+      };
     case FETCH_QUESTIONS_FAIL:
-      return state;
+      return {
+        ...state,
+        isFetching: false,
+        error: action.payload,
+      };
     case NEXT_QUESTION:
       return {
         ...state,
@@ -29,6 +44,7 @@ function reducer(state = initialState, action) {
     case RESTART_SESSION:
       return {
         ...state,
+        displayQuestion: state.questionsList[0],
         questionCounter: 1
       };
     default:

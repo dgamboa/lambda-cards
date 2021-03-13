@@ -19,10 +19,11 @@ export const getQuestions = () => dispatch => {
 
   axios.get(getUrl('/api/questions'))
     .then(res => {
-      console.log({res}) // finish
+      console.log("here")
+      dispatch(fetchQuestionsSuccess(res.data));
     })
     .catch(err => {
-      console.log({err}) // finish error setting with Fail
+      dispatch(fetchQuestionsFail(err.response.data.message));
     })
 };
 
