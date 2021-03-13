@@ -1,11 +1,14 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { useHistory } from 'react-router';
+import { getQuestions } from '../actions';
 
-export default function HomePage() {
+function HomePage(props) {
   const history = useHistory();
 
   const handleStart = e => {
     e.preventDefault();
+    props.getQuestions();
     history.push("/cards");
   };
 
@@ -21,3 +24,11 @@ export default function HomePage() {
     </div>
   )
 }
+
+const mapStateToProps = state => {
+  return {
+    questionsList: state.questionsList
+  };
+};
+
+export default connect(mapStateToProps, { getQuestions })(HomePage);

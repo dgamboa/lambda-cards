@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { useHistory } from 'react-router';
-import { nextQuestion, getQuestions } from '../../actions';
+import { nextQuestion } from '../../actions';
 
 function FlashCard(props) {
   const { totalQuestions, displayQuestion, questionCounter } = props;
@@ -25,7 +25,6 @@ function FlashCard(props) {
   const handleFinish = e => {
     e.preventDefault();
     history.push("/conclusion");
-    props.getQuestions();
   };
 
   const flipCard = e => {
@@ -70,4 +69,4 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps, { nextQuestion, getQuestions })(FlashCard);
+export default connect(mapStateToProps, { nextQuestion })(FlashCard);
