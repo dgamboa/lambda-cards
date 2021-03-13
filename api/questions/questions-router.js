@@ -12,7 +12,7 @@ router.get('/', async (req, res, next) => {
   } catch(err) { next(err) }
 });
 
-router.get('/:id', validateQuestionId, async (req, res, next) => {
+router.get('/:id', validateQuestionId, async (req, res) => {
   res.json(req.question);
 });
 

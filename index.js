@@ -7,11 +7,6 @@ const express = require('express');
 const server = require('./api/server');
 server.use(express.static(path.join(__dirname, 'frontend/build')));
 
-if (process.env.NODE_ENV === 'development') {
-  const cors = require('cors');
-  server.use(cors());
-};
-
 // Display React App for non-API Endpoints
 server.use('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'));
