@@ -6,6 +6,10 @@
   display: inline-block;
 }
 
+.typed {
+  animation: blink 0.7s infinite normal;
+}
+
 @keyframes wave-animation {
   0% { transform: rotate( 0.0deg) }
  10% { transform: rotate(14.0deg) }
@@ -15,4 +19,9 @@
  50% { transform: rotate(10.0deg) }
  60% { transform: rotate( 0.0deg) }
 100% { transform: rotate( 0.0deg) }
+}
+
+@keyframes blink {
+  from { border-right: solid 1px rgb(0,0,0,1); }
+  to { border-right: solid 1px rgb(255,255,255,0); }
 }
