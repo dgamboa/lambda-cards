@@ -19,6 +19,7 @@ function reducer(state = initialState, action) {
         ...state,
         questionsList: [],
         displayQuestion: {},
+        questionCounter: 1,
         isFetching: true,
         error: ""
       };
