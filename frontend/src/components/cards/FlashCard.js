@@ -19,7 +19,7 @@ function FlashCard(props) {
     };
     setTimeout(() => {
       props.nextQuestion();
-    }, 100)
+    }, 200)
   };
 
   const handleFinish = e => {
