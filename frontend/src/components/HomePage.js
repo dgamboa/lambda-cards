@@ -16,11 +16,11 @@ function HomePage(props) {
 
   return (
     <div className="home-container">
-      <h1><span className="wave">👋</span> Welcome to Lambda Cards</h1>
+      <h1><span className="wave">👋</span>Lambda Cards</h1>
       <h2 className="tagline">
-        An easy way to prepare for the Lambda Web Core Interview using <a href="https://en.wikipedia.org/wiki/Active_recall" target=
-        "_blank" rel="noreferrer">Active Recall</a> and <a href="https://en.wikipedia.org/wiki/Spaced_repetition" target=
-        "_blank" rel="noreferrer">Spaced Repetition</a> to
+        An easy way to prepare for the Lambda Web Core Interview using <span className="underline"><a href="https://en.wikipedia.org/wiki/Active_recall" target=
+        "_blank" rel="noreferrer">active recall</a></span> and <span className="underline"><a href="https://en.wikipedia.org/wiki/Spaced_repetition" target=
+        "_blank" rel="noreferrer">spaced repetition</a></span> to
           <Typewriter
             options={{
               strings: [' pass', ' rock', ' crush it'],
@@ -29,7 +29,7 @@ function HomePage(props) {
             }}
           />
       </h2>
-      <button className="start-button" onClick={handleStart}>Click here to start</button>
+      <button className="start-button" onClick={handleStart}>Start Studying &#8594;</button>
     </div>
   )
 }

@@ -15,11 +15,12 @@ function ConclusionPage(props) {
 
   return (
     <div className="home-container">
-      <h1>Good work! 👏</h1>
-      <p>
-        You may want to take a break before doing another round
+      <h2 className="diamond-hands">💎 🙌 🚀 🌝</h2>
+      <h1>Great work!</h1>
+      <p className="tagline">
+        Take a well deserved break and come back for some more reps when you're ready
       </p>
-      <button className="restart-button" onClick={handleRestart}>When you're ready, click here to start again</button>
+      <button className="start-button" onClick={handleRestart}>Go Again &#8594;</button>
     </div>
   )
 }

@@ -41,7 +41,7 @@ function FlashCard(props) {
         <div className="card">
           <div className="card-face front">
             <h3 className="question-front">{displayQuestion.question}</h3>
-            <p onClick={flipCard}>See answer</p>
+            <p className="see-answer" onClick={flipCard}>See answer</p>
           </div>
           <div className="card-face back">
             <h3 className="question-back">{displayQuestion.question}</h3>
@@ -51,7 +51,7 @@ function FlashCard(props) {
       </div>
       {
         questionCounter < totalQuestions &&
-        <button className="next-question" onClick={handleNextQuestion}>Next Question</button>
+        <button className="next-question" onClick={handleNextQuestion}>Next &#8594;</button>
       }
       {
         questionCounter === totalQuestions &&

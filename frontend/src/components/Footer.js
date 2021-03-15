@@ -19,19 +19,11 @@ export default function Footer() {
         </a>
       </div>
       <div className="github-footer">
-        <a href="http://example.com"
+        <a href="https://github.com/dgamboa/lambda-cards"
            target="_blank"
            rel="noreferrer"
         >
-          GitHub Repo
-        </a>
-      </div>
-      <div className="features-footer">
-        <a href="http://example.com"
-           target="_blank"
-           rel="noreferrer"
-        >
-          Future Features
+          Repo
         </a>
       </div>
       <div className="design-footer">
@@ -39,7 +31,7 @@ export default function Footer() {
            target="_blank"
            rel="noreferrer"
         >
-          Design Document
+          Design
         </a>
       </div>
     </footer>

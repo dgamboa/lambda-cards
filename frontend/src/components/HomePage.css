@@ -1,31 +1,76 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+h2.diamond-hands {
+  font-size: 2.2rem;
+}
+
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: initial;
   transform-origin: 70% 70%;
   display: inline-block;
+  padding: 0 1rem;
 }
 
-.typed {
-  animation: blink 0.7s infinite normal;
+.tagline {
+  font-size: 2rem;
+  margin-bottom: 5rem;
+  max-width: 60rem;
+}
+
+span.underline a {
+  text-decoration: none;
+  color: #add8e6;
+}
+
+span.underline a:hover {
+  color: #71d1f1;
 }
 
 .Typewriter {
   display: inline;
+  color: #00c486;
+  font-weight: 700;
+}
+
+.start-button {
+  background-color: #00df9a;
+  border-radius: 0.3rem;
+  border: none;
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #00b87d;
 }
 
 @keyframes wave-animation {
   0% { transform: rotate( 0.0deg) }
- 10% { transform: rotate(14.0deg) }
- 20% { transform: rotate(-8.0deg) }
- 30% { transform: rotate(14.0deg) }
- 40% { transform: rotate(-4.0deg) }
+ 10% { transform: rotate(12.0deg) }
+ 20% { transform: rotate(-10.0deg) }
+ 30% { transform: rotate(16.0deg) }
+ 40% { transform: rotate(-14.0deg) }
  50% { transform: rotate(10.0deg) }
- 60% { transform: rotate( 0.0deg) }
+ 60% { transform: rotate(-4.0deg) }
+ 70% { transform: rotate(8.0deg) }
+ 80% { transform: rotate(-2.0deg) }
+ 90% { transform: rotate(12.0deg) }
 100% { transform: rotate( 0.0deg) }
-}
-
-@keyframes blink {
-  from { border-right: solid 1px rgb(0,0,0,1); }
-  to { border-right: solid 1px rgb(255,255,255,0); }
 }
