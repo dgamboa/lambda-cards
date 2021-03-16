@@ -34,10 +34,4 @@ function HomePage(props) {
   )
 }
 
-const mapStateToProps = state => {
-  return {
-    questionsList: state.questionsList
-  };
-};
-
-export default connect(mapStateToProps, { getQuestions })(HomePage);
+export default connect(null, { getQuestions })(HomePage);
