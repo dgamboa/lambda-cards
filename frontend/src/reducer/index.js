@@ -1,5 +1,4 @@
 import { NEXT_QUESTION,
-         RESTART_SESSION,
          FETCH_QUESTIONS_LOADING,
          FETCH_QUESTIONS_SUCCESS,
          FETCH_QUESTIONS_FAIL } from "../actions";
@@ -41,12 +40,6 @@ function reducer(state = initialState, action) {
         ...state,
         questionCounter: state.questionCounter + 1,
         displayQuestion: state.questionsList[state.questionCounter]
-      };
-    case RESTART_SESSION:
-      return {
-        ...state,
-        displayQuestion: state.questionsList[0],
-        questionCounter: 1
       };
     default:
       return state;

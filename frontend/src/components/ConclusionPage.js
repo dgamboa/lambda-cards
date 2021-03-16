@@ -1,15 +1,14 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { useHistory } from 'react-router';
-import { restartSession } from '../actions';
+import { getQuestions } from '../actions';
 
 function ConclusionPage(props) {
   const history = useHistory();
 
   const handleRestart = e => {
     e.preventDefault();
-    props.restartSession();
-    // Need to re-fetch the data so it scrambles
+    props.getQuestions();
     history.push("/cards")
   };
 
@@ -25,10 +24,4 @@ function ConclusionPage(props) {
   )
 }
 
-const mapStateToProps = state => {
-  return {
-    questionCounter: state.questionCounter
-  };
-};
-
-export default connect(mapStateToProps, { restartSession })(ConclusionPage);
+export default connect(null, { getQuestions })(ConclusionPage);

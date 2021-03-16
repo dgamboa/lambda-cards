@@ -2,7 +2,6 @@ import axios from 'axios';
 import shuffle from "./shuffle";
 
 export const NEXT_QUESTION = "NEXT_QUESTION";
-export const RESTART_SESSION = "RESTART_SESSION";
 export const FETCH_QUESTIONS_LOADING = "FETCH_QUESTIONS_LOADING";
 export const FETCH_QUESTIONS_SUCCESS = "FETCH_QUESTIONS_SUCCESS";
 export const FETCH_QUESTIONS_FAIL = "FETCH_QUESTIONS_FAIL";
@@ -51,11 +50,5 @@ export function fetchQuestionsFail(error) {
 export function nextQuestion() {
   return {
     type: NEXT_QUESTION
-  };
-};
-
-export function restartSession() {
-  return {
-    type: RESTART_SESSION
   };
 };
