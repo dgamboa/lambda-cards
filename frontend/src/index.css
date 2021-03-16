@@ -66,3 +66,9 @@ code {
 .footer a:hover {
   color: #fff;
 }
+
+@media(max-width: 400px) {
+  .footer {
+    margin-bottom: 15rem;
+  }
+}
