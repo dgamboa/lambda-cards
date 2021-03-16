@@ -18,7 +18,7 @@ function HomePage(props) {
     <div className="home-container">
       <h1><span className="wave">👋</span>Lambda Cards</h1>
       <h2 className="tagline">
-        An easy way to prepare for the Lambda Web Core Interview using <span className="underline"><a href="https://en.wikipedia.org/wiki/Active_recall" target=
+        An easy way to prepare for the Lambda School web core interview using <span className="underline"><a href="https://en.wikipedia.org/wiki/Active_recall" target=
         "_blank" rel="noreferrer">active recall</a></span> and <span className="underline"><a href="https://en.wikipedia.org/wiki/Spaced_repetition" target=
         "_blank" rel="noreferrer">spaced repetition</a></span> to
           <Typewriter
