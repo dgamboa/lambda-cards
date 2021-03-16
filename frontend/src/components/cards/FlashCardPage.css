@@ -89,6 +89,7 @@ header.question-counter-container {
 
 .question-front, .question-back {
   color: #222;
+  padding: 0 1rem;
 }
 
 .question-back {
@@ -101,6 +102,7 @@ header.question-counter-container {
   font-size: 2rem;
   margin: 1rem 2.5rem;
   color: #333;
+  padding: 0 0.5rem;
 }
 
 .next-question, .finish {
@@ -132,6 +134,6 @@ header.question-counter-container {
 
 @media(max-width: 400px) {
   .ring-fence {
-    width: 100vw; 
+    width: 95vw; 
   }
 }
