@@ -116,4 +116,5 @@ dist
 .pnp.*
 
 .DS_store
-.vscode/
+.vscode
+.eslintrc.json
