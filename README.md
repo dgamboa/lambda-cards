@@ -4,7 +4,7 @@
 ## Overview
 Lambda Cards is a flashcards web app designed to study for the [Lambda School](https://lambdaschool.com/) web core interview. It shows the student a random question using [Fisher-Yates](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle), encourages the student to use [active recall](https://en.wikipedia.org/wiki/Active_recall) to answer the question, and uses card flipping functionality to display the answer in the back of the card.
 
-[Check it out at lambdacards.com](lambdacards.com)
+Check it out at [lambdacards.com](http://www.lambdacards.com)
 
 ## Getting Started
 The base technologies are JavaScript, HTML and CSS. The frontend leverages [React](https://reactjs.org/), the backend uses [Express](https://expressjs.com/) and [SQLite](https://www.sqlite.org/index.html) and the app lives on [Heroku](heroku.com).
