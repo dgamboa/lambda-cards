@@ -14,7 +14,7 @@ The base technologies are JavaScript, HTML and CSS. The frontend leverages [Reac
 1. Clone a version to your local repository
 1. From the root directory in your terminal:
     1. Download the server dependencies by running `npm install`
-    1. Seed the database with `knex seed:run`
+    1. Seed the database with `npx knex seed:run`
     1. Start up the server by running `npm run server`
 1. From the frontend directory in your terminal:
     1. Download the frontend dependencies by running `npm install`
