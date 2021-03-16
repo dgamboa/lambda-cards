@@ -30,7 +30,7 @@ header.question-counter-container {
 .card {
   width: 100%;
   height: 100%;
-  transition: transform 0.85s;
+  transition: transform 0.5s;
   transform-style: preserve-3d;
   position: relative;
   border: solid 1px #000;
