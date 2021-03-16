@@ -1,4 +1,5 @@
 import axios from 'axios';
+import shuffle from "./shuffle";
 
 export const NEXT_QUESTION = "NEXT_QUESTION";
 export const RESTART_SESSION = "RESTART_SESSION";
@@ -19,8 +20,8 @@ export const getQuestions = () => dispatch => {
 
   axios.get(getUrl('/api/questions'))
     .then(res => {
-      console.log("here")
-      dispatch(fetchQuestionsSuccess(res.data));
+      const shuffledList = shuffle(res.data);
+      dispatch(fetchQuestionsSuccess(shuffledList));
     })
     .catch(err => {
       dispatch(fetchQuestionsFail(err.response.data.message));
