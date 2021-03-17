@@ -8,7 +8,7 @@ export const FETCH_QUESTIONS_FAIL = "FETCH_QUESTIONS_FAIL";
 
 function getUrl(path) {
   if (process.env.NODE_ENV === 'development') {
-    return `http://localhost:4000${path}`
+    return `http://localhost:5000${path}`
   } else {
     return path
   }
