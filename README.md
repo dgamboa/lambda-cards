@@ -13,8 +13,9 @@ The base technologies are JavaScript, HTML and CSS. The frontend leverages [Reac
 1. Create a forked copy of this project
 1. Clone a version to your local repository
 1. From the root directory in your terminal:
+    1. Create a an environment file (.env) and declare NODE_ENV=development and PORT=5000[^1]
+    1. Add the `.env` to your `.gitignore`
     1. Download the server dependencies by running `npm install`
-    1. Seed the database with `npx knex seed:run`
     1. Start up the server by running `npm run server`
 1. From the frontend directory in your terminal:
     1. Download the frontend dependencies by running `npm install`
@@ -25,3 +26,5 @@ The base technologies are JavaScript, HTML and CSS. The frontend leverages [Reac
 If you've made it this far, I bet you have some feedback (ideas, insights, improvements, criticisms, maybe even a good ol' fashioned rant). I would welcome any and all of it. I like being the filter of my noise so even if you think it may not be useful, send it along. I'll be grateful.
 
 Thanks for checking out the project.
+
+[^1]: You may run the backend server in a different port. If you do, make sure to update your local API call in the [frontend action creator](https://github.com/dgamboa/lambda-cards/blob/main/frontend/src/actions/index.js).
