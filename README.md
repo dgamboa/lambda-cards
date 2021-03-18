@@ -13,7 +13,7 @@ The base technologies are JavaScript, HTML and CSS. The frontend leverages [Reac
 1. Create a forked copy of this project
 1. Clone a version to your local repository
 1. From the root directory in your terminal:
-    1. Create a an environment file (.env) and declare NODE_ENV=development and PORT=5000[^1]
+    1. Create a an environment file (.env) and declare NODE_ENV=development and PORT=5000[1]
     1. Add the `.env` to your `.gitignore`
     1. Download the server dependencies by running `npm install`
     1. Start up the server by running `npm run server`
@@ -27,4 +27,5 @@ If you've made it this far, I bet you have some feedback (ideas, insights, impro
 
 Thanks for checking out the project.
 
-[^1]: You may run the backend server in a different port. If you do, make sure to update your local API call in the [frontend action creator](https://github.com/dgamboa/lambda-cards/blob/main/frontend/src/actions/index.js).
+## Notes
+[1] You may run the backend server in a different port. If you do, make sure to update your local API call in the [frontend action creator](https://github.com/dgamboa/lambda-cards/blob/main/frontend/src/actions/index.js).
