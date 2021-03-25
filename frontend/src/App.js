@@ -5,18 +5,16 @@ import FlashCardPage from "./components/cards/FlashCardPage";
 import ConclusionPage from "./components/ConclusionPage";
 import Footer from "./components/Footer";
 import ReactGA from "react-ga";
-import { createBrowserHistory } from "history";
+import { useLocation } from "react-router-dom";
 
 ReactGA.initialize("UA-192318099-1");
-const browserHistory = createBrowserHistory();
-browserHistory.listen((location, action) => {
-  ReactGA.pageview(location.pathname + location.search)
-})
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
 
   return (
     <div className="App">
