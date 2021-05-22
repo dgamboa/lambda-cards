@@ -8,12 +8,11 @@ const stripePromise = loadStripe(
 
 function DonatePage(props) {
   const handleClick = async (event) => {
-    // When the customer clicks on the button, redirect them to Checkout.
     const stripe = await stripePromise;
     const { error } = await stripe.redirectToCheckout({
       lineItems: [
         {
-          price: "price_1ItvjeFC7ihmJU9WnsJ6lfD1",
+          price: event.target.id,
           quantity: 1,
         },
       ],
@@ -32,16 +31,33 @@ function DonatePage(props) {
         <a href="https://lambdaschool.com/">Lambda School</a> students can use
         it to prepare for interviews
       </p>
-      <button className="donate-button" onClick={handleClick}>
+
+      <button
+        className="donate-button"
+        id="price_1ItvjeFC7ihmJU9WnsJ6lfD1"
+        onClick={handleClick}
+      >
         Donate $1
       </button>
-      <button className="donate-button" onClick={console.log("donate")}>
+      <button
+        className="donate-button"
+        id="price_1ItvjmFC7ihmJU9WoWWWP16q"
+        onClick={handleClick}
+      >
         Donate $5
       </button>
-      <button className="donate-button" onClick={console.log("donate")}>
+      <button
+        className="donate-button"
+        id="price_1ItvjxFC7ihmJU9WnMY8XdP2"
+        onClick={handleClick}
+      >
         Donate $10
       </button>
-      <button className="donate-button" onClick={console.log("donate")}>
+      <button
+        className="donate-button"
+        id="price_1Itvk6FC7ihmJU9WDf6OvkRS"
+        onClick={handleClick}
+      >
         Donate $25
       </button>
     </div>
