@@ -1,0 +1,24 @@
+.donate-button {
+  background-color: #00df9a;
+  border-radius: 0.4rem;
+  border: none;
+  height: 50px;
+  width: 200px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 1.2rem;
+}
+
+.donate-button:hover {
+  background-color: #00b87d;
+}
+
+a {
+  text-decoration: none;
+  color: #add8e6;
+}
+
+a:hover {
+  color: #71d1f1;
+}
