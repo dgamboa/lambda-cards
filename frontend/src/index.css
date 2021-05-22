@@ -67,6 +67,19 @@ code {
   color: #fff;
 }
 
+.donate-footer > a {
+  padding: 1rem;
+  background-color: #e6bc70;
+  border-radius: 0.4rem;
+  color: #282C34;
+  font-weight: bold;
+}
+
+.donate-footer > a:hover {
+  color: #e6bc70;
+  background-color: #68696b;
+}
+
 @media(max-width: 400px) {
   .footer {
     margin-bottom: 12rem;

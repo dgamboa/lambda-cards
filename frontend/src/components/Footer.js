@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   const history = useHistory();
@@ -33,6 +34,9 @@ export default function Footer() {
         >
           Design
         </a>
+      </div>
+      <div className="donate-footer">
+        <Link to="/donate">Donate</Link>
       </div>
     </footer>
   )
