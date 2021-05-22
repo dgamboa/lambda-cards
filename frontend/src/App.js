@@ -3,6 +3,7 @@ import { Route } from "react-router";
 import HomePage from "./components/HomePage";
 import FlashCardPage from "./components/cards/FlashCardPage";
 import ConclusionPage from "./components/ConclusionPage";
+import DonatePage from "./components/DonatePage";
 import Footer from "./components/Footer";
 import ReactGA from "react-ga";
 import { useLocation } from "react-router-dom";
@@ -21,6 +22,7 @@ function App() {
       <Route exact path={"/"} component={HomePage} />
       <Route exact path={"/cards"} component={FlashCardPage} />
       <Route exact path={"/conclusion"} component={ConclusionPage} />
+      <Route exact path={"/donate"} component={DonatePage} />
       <Footer />
     </div>
   );
