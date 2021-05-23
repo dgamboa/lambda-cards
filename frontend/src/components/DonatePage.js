@@ -3,7 +3,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import "./DonatePage.css";
 
 const stripePromise = loadStripe(
-  "pk_test_51Itc7UFC7ihmJU9W7mBC368EM21sMXtLKQRNjFLa61X7vmQp00mgMz2lUZSZSxMENlNtHv97VYyR9cA2PCwq3iCN00He245DLG"
+  "pk_live_51Itc7UFC7ihmJU9WBVfdotCmOFQcBZgZ44XS2w5dfXS2eRFbWdNEkRINP97Dlov6D8Fbm5BwDIiVof3KS9v1MciW001a9I8fk4"
 );
 
 function DonatePage(props) {
@@ -35,28 +35,28 @@ function DonatePage(props) {
 
       <button
         className="donate-button"
-        id="price_1ItvjeFC7ihmJU9WnsJ6lfD1"
+        id="price_1Iu6OTFC7ihmJU9WpUsAjBmt"
         onClick={handleClick}
       >
         Donate $1
       </button>
       <button
         className="donate-button"
-        id="price_1ItvjmFC7ihmJU9WoWWWP16q"
+        id="price_1Iu6OQFC7ihmJU9WPqcaqrLw"
         onClick={handleClick}
       >
         Donate $5
       </button>
       <button
         className="donate-button"
-        id="price_1ItvjxFC7ihmJU9WnMY8XdP2"
+        id="price_1Iu6ONFC7ihmJU9W3fWbDtmR"
         onClick={handleClick}
       >
         Donate $10
       </button>
       <button
         className="donate-button"
-        id="price_1Itvk6FC7ihmJU9WDf6OvkRS"
+        id="price_1Iu6OHFC7ihmJU9WoAGHz1eT"
         onClick={handleClick}
       >
         Donate $25
