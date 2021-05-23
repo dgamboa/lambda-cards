@@ -22,3 +22,9 @@ a {
 a:hover {
   color: #71d1f1;
 }
+
+@media(max-width: 400px) {
+  .tagline {
+    margin-bottom: 2rem;
+  }
+}
