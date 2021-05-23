@@ -17,8 +17,9 @@ function DonatePage(props) {
         },
       ],
       mode: "payment",
-      successUrl: "http://localhost:3000/",
-      cancelUrl: "http://localhost:3000/donate",
+      successUrl: "http://lambdacards.com/",
+      cancelUrl: "http://lambdacards.com/donate",
+      submitType: 'donate',
     });
   };
 
