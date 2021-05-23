@@ -17,8 +17,8 @@ function DonatePage(props) {
         },
       ],
       mode: "payment",
-      successUrl: "http://lambdacards.com/",
-      cancelUrl: "http://lambdacards.com/donate",
+      successUrl: "https://www.lambdacards.com/",
+      cancelUrl: "https://www.lambdacards.com/donate",
       submitType: 'donate',
     });
   };
