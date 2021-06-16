@@ -6,6 +6,8 @@ Lambda Cards is a flashcards web app designed to study for the [Lambda School](h
 
 Check it out at [lambdacards.com](http://www.lambdacards.com)
 
+Check out the [lightning talk from Lambda School's Roundtable](https://www.youtube.com/watch?v=KtBfGsI_XbM) in May 2021 where I demo the app, describe the design process, and dive into some features.
+
 ## Getting Started
 The base technologies are JavaScript, HTML and CSS. The frontend leverages [React](https://reactjs.org/), the backend uses [Express](https://expressjs.com/) and [SQLite](https://www.sqlite.org/index.html) and the app lives on [Heroku](heroku.com).
 
